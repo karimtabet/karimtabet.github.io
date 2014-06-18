@@ -1,0 +1,76 @@
+body {
+    font-family: 'Comfortaa', cursive;
+}
+#nav {
+    position: fixed;
+    width: 350px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #E4E4E4;
+    -webkit-box-shadow: 2px 0px 20px 0px #000;
+    -moz-box-shadow: 2px 0px 20px 0px #000;
+    box-shadow: 2px 0px 20px 0px #000;
+}
+#nav #avatar {
+    margin-top: 30px;
+    padding-left: 20%;
+    height: 160px;
+}
+#nav h1 {
+    text-align: center;
+}
+#nav h2 {
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+}
+#nav ul {
+    padding: 0;
+    margin-top: 60px;
+    width: 100%;
+}
+#nav ul li {
+    font-size: 18px;
+    border-bottom: solid;
+    border-color: #C1C1C1;
+    border-width: 0.1px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+#nav ul #button_1 {
+    border-top: solid;
+    border-color: #C1C1C1;
+    border-width: 0.1px;
+}
+#nav ul li:hover, #nav ul li:focus {
+    color: #FFFFFF;
+    font-weight: bold;
+    cursor: pointer;
+}
+#nav ul #button_1:hover, #nav ul #button_1:focus,
+#nav ul #button_5:hover, #nav ul #button_5:focus {
+    background-color: #45A372;
+}
+#nav ul #button_2:hover, #nav ul #button_2:focus,
+#nav ul #button_6:hover, #nav ul #button_6:focus {
+    background-color: #438EB0;
+}
+#nav ul #button_3:hover, #nav ul #button_3:focus,
+#nav ul #button_7:hover, #nav ul #button_7:focus {
+    background-color: #8C78B3;
+}
+#nav ul #button_4:hover, #nav ul #button_4:focus,
+#nav ul #button_8:hover, #nav ul #button_8:focus {
+    background-color: #D66794;
+}
+.page_container {
+    display: none;
+    height:100%;
+    position: fixed;
+    margin-left: 400px;
+}
