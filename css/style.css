@@ -86,3 +86,6 @@ body {
     position: fixed;
     margin-left: 280px;
 }
+.current {
+    display: inline;
+}
