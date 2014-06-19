@@ -85,7 +85,26 @@ body {
     height:100%;
     position: fixed;
     margin-left: 280px;
+    width: 80%;
 }
 .current {
     display: inline;
+}
+.pure-g {
+    letter-spacing: 0;
+}
+#github_repos {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: #C1C1C1;
+}
+#github_repos h2 {
+    font-size: 12px;
+    background-color: #DBDBDB;
+    font-weight: bold;
+    padding-top: 0;
+    margin-top: 0;
 }
