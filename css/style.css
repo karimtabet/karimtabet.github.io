@@ -115,9 +115,14 @@ body {
     border-color: #C1C1C1;
 }
 .repo_forks a {
+    font-size: 12px;
     float: right;
     padding: 14px;
+    padding-top: 16px;
 }
 .repo_name a, .repo_forks a {
     text-decoration: none;
+}
+.repo_name a:hover, .repo_name a:focus {
+    text-decoration: underline;
 }
