@@ -13,13 +13,15 @@ body {
     box-shadow: 2px 0px 20px 0px #000;
 }
 #nav #avatar {
-    margin-top: 30px;
+    margin-top: 20px;
     padding-left: 13%;
     height: 140px;
 }
 #nav h1 {
     font-size: 28px;
     text-align: center;
+    margin-bottom: 0;
+    margin-top: 5px;
 }
 #nav h2 {
     font-size: 14px;
@@ -41,6 +43,16 @@ body {
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 30px;
+}
+#nav ul .selected {
+    color: #FFFFFF;
+    font-weight: bold;
+    background-color: #45A372;
+    -webkit-box-shadow: inset 0px 1px 5px 0px #323232;
+    -moz-box-shadow: inset 0px 1px 5px 0px #323232;
+    box-shadow: inset 0px 1px 5px 0px #323232;
+    border-top: none;
+    border-bottom: none;
 }
 #nav ul #button_1 {
     border-top: solid;

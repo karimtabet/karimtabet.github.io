@@ -11,14 +11,14 @@
         <h1>Karim Tabet</h1>
         <h2>Freelance developer, designer and proud lover of all things open-source</h2>
         <ul>
-            <li class="nav_button" id="button_1">Blog</li>
+            <li class="nav_button selected" id="button_1"><div>Blog</li>
             <li class="nav_button" id="button_2">News</li>
-            <li id="button_3">Portfolio</li>
-            <li id="button_4">Github</li>
-            <li id="button_5">Bitbucket</li>
-            <li id="button_6">LinkedIn</li>
-            <li id="button_7">Newgrounds</li>
-            <li id="button_8">Twitter</li>
+            <li class="nav_button" id="button_3">Portfolio</li>
+            <li class="nav_button" id="button_4">Github</li>
+            <li class="nav_button" id="button_5">Bitbucket</li>
+            <li class="nav_button" id="button_6">LinkedIn</li>
+            <li class="nav_button" id="button_7">Newgrounds</li>
+            <li class="nav_button" id="button_8">Twitter</li>
         <ul>
     </div>
 
@@ -45,7 +45,12 @@
                 "#" 
                 + $(this).text().toLowerCase() 
                 + "_page";
+            var background_colour = ($(this).css('backgroundColor'));
             $(page_to_open).delay('300').animate({width:'toggle'},550);
+            $('.nav_button').removeClass('selected');
+            $('.nav_button').css('background', 'none');
+            $(this).addClass('selected');
+            $(this).css('background', background_colour);
         });
     </script>
 </body>
