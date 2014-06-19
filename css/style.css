@@ -66,19 +66,19 @@ body {
 }
 #nav ul #button_1:hover, #nav ul #button_1:focus,
 #nav ul #button_5:hover, #nav ul #button_5:focus {
-    background-color: #45A372;
+    background-color: #45A372 !important;
 }
 #nav ul #button_2:hover, #nav ul #button_2:focus,
 #nav ul #button_6:hover, #nav ul #button_6:focus {
-    background-color: #438EB0;
+    background-color: #438EB0 !important;
 }
 #nav ul #button_3:hover, #nav ul #button_3:focus,
 #nav ul #button_7:hover, #nav ul #button_7:focus {
-    background-color: #8C78B3;
+    background-color: #8C78B3 !important;
 }
 #nav ul #button_4:hover, #nav ul #button_4:focus,
 #nav ul #button_8:hover, #nav ul #button_8:focus {
-    background-color: #D66794;
+    background-color: #D66794 !important;
 }
 .page_container {
     display: none;
