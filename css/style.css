@@ -1,5 +1,7 @@
 body {
     font-family: 'Comfortaa', cursive;
+    margin: 0;
+    margin-right: 450px;
 }
 #nav {
     position: fixed;
@@ -11,6 +13,12 @@ body {
     -webkit-box-shadow: 2px 0px 20px 0px #000;
     -moz-box-shadow: 2px 0px 20px 0px #000;
     box-shadow: 2px 0px 20px 0px #000;
+}
+#relative_nav_mock {
+    position: relative;
+    width: 250px;
+    height: 1px;
+    float: left;
 }
 #nav #avatar {
     margin-top: 20px;
@@ -83,9 +91,10 @@ body {
 .page_container {
     display: none;
     height:100%;
-    position: fixed;
-    margin-left: 280px;
-    width: 80%;
+    position: relative;
+    width: 100%;
+    overflow: auto;
+    padding-left: 40px;
 }
 .current {
     display: inline;

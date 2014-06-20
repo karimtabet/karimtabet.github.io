@@ -23,6 +23,7 @@
             <li class="nav_button" id="button_8">Twitter</li>
         <ul>
     </div>
+    <div id="relative_nav_mock"></div>
 
     <div id="blog_page" class="page_container current">
         <h1>THIS SITE IS UNDER DEVELOPMENT</h1>
@@ -49,7 +50,7 @@
                 + $(this).text().toLowerCase() 
                 + "_page";
             var background_colour = ($(this).css('backgroundColor'));
-            $(page_to_open).delay('300').animate({width:'toggle'},700);
+            $(page_to_open).delay('300').fadeIn("slow");
             $('.nav_button').removeClass('selected');
             $('.nav_button').css('background', 'none');
             $(this).addClass('selected');
