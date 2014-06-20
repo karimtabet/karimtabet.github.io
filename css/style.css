@@ -1,7 +1,7 @@
 body {
     font-family: 'Comfortaa', cursive;
     margin: 0;
-    margin-right: 450px;
+    margin-right: 550px;
 }
 #nav {
     position: fixed;
@@ -108,7 +108,8 @@ body {
     border-color: #C1C1C1;
 }
 #github_repos h2 {
-    font-size: 14px;
+    color: #FFFFFF;
+    font-size: 13px;
     background-color: #D66794;
     font-weight: bold;
     padding-top: 0;
@@ -123,11 +124,20 @@ body {
     border-top-width: 0.1px;
     border-color: #C1C1C1;
 }
-.repo_forks a {
-    font-size: 12px;
+.repo_stats {
+    word-spacing: 10px;
+    font-size: 11px;
     float: right;
     padding: 14px;
-    padding-top: 16px;
+    padding-top: 30px;
+    color: #393939;
+    font-weight: bold;
+}
+.repo_stats a {
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #393939;
+    font-weight: bold;
 }
 .repo_name a, .repo_forks a {
     text-decoration: none;
