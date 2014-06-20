@@ -3,10 +3,18 @@ $(document).ready(function() {
         $.each(data, function(key, val) {
             var forks_url = 'https://github.com/'
             + val.full_name + '/network';
+            var stargazers_url = 'https://github.com/'
+            + val.full_name + '/stargazers';
             $('#github_repos').append(
-                //Forks
                 '<div class="repo_stats">'
+                //Language
                 + val.language
+                //Stargazers
+                + ' <a title="Stargazers" href="'
+                + stargazers_url + '" target="_blank">'
+                + '<i class="fa fa-star"></i>' 
+                + val.stargazers_count + '</a>'
+                //Forks
                 + ' <a title="Forks" href="' 
                 + forks_url + '" target="_blank">'
                 + '<i class="fa fa-code-fork"></i>' 
