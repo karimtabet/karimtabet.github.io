@@ -1,7 +1,7 @@
 body {
     font-family: 'Comfortaa', cursive;
     margin: 0;
-    margin-right: 550px;
+    margin-right: 330px;
 }
 #nav {
     position: fixed;
@@ -106,6 +106,17 @@ body {
     border-style: solid;
     border-width: 0.1px;
     border-color: #C1C1C1;
+    width: 70%;
+}
+#github_logo {
+    padding-top: 10px;
+    margin-right: 5px;
+    float: left;
+    overflow: auto;
+}
+#github_page_title {
+    left: 50px;
+    overflow: auto;
 }
 #github_repos h2 {
     color: #FFFFFF;
