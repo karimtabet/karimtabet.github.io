@@ -89,6 +89,7 @@ body {
     width: 100%;
     overflow: auto;
     padding-left: 290px;
+    z-index: -1;
 }
 .current {
     display: block;
