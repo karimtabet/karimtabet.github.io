@@ -6,7 +6,7 @@ $(document).ready(function() {
             var stargazers_url = 'https://github.com/'
             + val.full_name + '/stargazers';
             $('#github_repos').append(
-                '<div class="repo_stats">'
+                '<div class="item_stats">'
                 //Language
                 + val.language
                 //Stargazers
@@ -20,7 +20,7 @@ $(document).ready(function() {
                 + '<i class="fa fa-code-fork"></i>' 
                 + val.forks_count + '</a></div>'
                 //Full name
-                +'<div class="repo_name"><a href="' 
+                +'<div class="table_item_h1"><a href="' 
                 + val.html_url + '" target="_blank">' 
                 + val.full_name.replace('karimtabet/', '') 
                 + '</a><div>'

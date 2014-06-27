@@ -127,13 +127,13 @@ body {
 #github_repos h2 {
     background-color: #D66794;
 }
-.repo_name {
+.table_item_h1 {
     padding: 14px;
     border-top: solid;
     border-top-width: 1px;
     border-color: #C1C1C1;
 }
-.repo_stats {
+.item_stats {
     word-spacing: 10px;
     font-size: 11px;
     float: right;
@@ -142,16 +142,16 @@ body {
     color: #393939;
     font-weight: bold;
 }
-.repo_stats a {
+.item_stats a {
     letter-spacing: 1px;
     text-decoration: none;
     color: #393939;
     font-weight: bold;
 }
-.repo_name a, .repo_forks a {
+.table_item_h1 a, .repo_forks a {
     text-decoration: none;
 }
-.repo_name a:hover, .repo_name a:focus {
+.table_item_h1 a:hover, .table_item_h1 a:focus {
     text-decoration: underline;
 }
 .repo_description {
@@ -161,4 +161,16 @@ body {
 }
 #ng_movies h2 {
     background-color: #8C78B3;
+}
+#ng_image {
+    float: left;
+    width: 80px;
+    margin: 9px;
+    margin-bottom: 0px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #8C78B3;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
