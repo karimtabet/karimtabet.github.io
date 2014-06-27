@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $.getJSON('js/github-data.json', function(data) {
+    $.getJSON('json/github-data.json', function(data) {
         $.each(data, function(key, val) {
             var forks_url = 'https://github.com/'
             + val.full_name + '/network';
