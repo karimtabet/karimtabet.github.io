@@ -1,28 +1,53 @@
 $(document).ready(function() {
-    console.log("YO");
-    $.getJSON('json/ng-data.json', function(data) {
+    $.getJSON('json/ng-movie-data.json', function(data) {
             console.log("val");
         $.each(data, function(key, val) {
-            console.log(val.movie_link);
+            console.log(val.link);
             $('#ng_movies').append(
                 '<div class="item_stats">'
                 //Awards
-                + val.movie_award.replace(' ', '-').replace(' ', '-') + ' '
+                + val.award.replace(' ', '-').replace(' ', '-') + ' '
                 //Views
-                + 'Views:' + val.movie_views
+                + 'Views:' + val.views
                 //Rating
-                + ' Rating:' + val.movie_rating + '</div>'
+                + ' Rating:' + val.rating + '</div>'
                 //Image
-                + '<a href=' + val.movie_link + 'target="_blank">'
+                + '<a href=' + val.link + 'target="_blank">'
                 + '<img id="ng_image" src='
-                + val.movie_img + '></a>'
+                + val.img + '></a>'
                 //Name
                 + '<div class="table_item_h1"><a href="' 
-                + val.movie_link + '" target="_blank">' 
-                + val.movie_name + '</a><div>'
+                + val.link + '" target="_blank">' 
+                + val.name + '</a><div>'
                 //Description
                 +'<div class="repo_description">'
-                + val.movie_description + '<div>'
+                + val.description + '<div>'
+            );
+        });
+    });
+    $.getJSON('json/ng-games-data.json', function(data) {
+            console.log("val");
+        $.each(data, function(key, val) {
+            console.log(val.link);
+            $('#ng_games').append(
+                '<div class="item_stats">'
+                //Awards
+                + val.award.replace(' ', '-').replace(' ', '-') + ' '
+                //Views
+                + 'Views:' + val.views
+                //Rating
+                + ' Rating:' + val.rating + '</div>'
+                //Image
+                + '<a href=' + val.link + 'target="_blank">'
+                + '<img id="ng_image" src='
+                + val.img + '></a>'
+                //Name
+                + '<div class="table_item_h1"><a href="' 
+                + val.link + '" target="_blank">' 
+                + val.name + '</a><div>'
+                //Description
+                +'<div class="repo_description">'
+                + val.description + '<div>'
             );
         });
     });
