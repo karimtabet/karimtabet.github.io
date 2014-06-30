@@ -136,11 +136,12 @@ body {
 #github_repos h2 {
     background-color: #D66794;
 }
-.table_item_h1 {
+#repo_item_h1 {
     padding: 14px;
     border-top: solid;
     border-top-width: 1px;
     border-color: #C1C1C1;
+    padding-bottom: 5px;
 }
 .item_stats {
     word-spacing: 10px;
@@ -163,10 +164,10 @@ body {
 .table_item_h1 a:hover, .table_item_h1 a:focus {
     text-decoration: underline;
 }
-.repo_description {
-    margin-top: 5px;
+#repo_description {
     font-size: 12px;
     color: #393939;
+    padding: 14px;
 }
 #ng_movies h2, #ng_games h2 {
     background-color: #8C78B3;

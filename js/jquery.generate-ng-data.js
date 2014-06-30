@@ -1,8 +1,6 @@
 $(document).ready(function() {
     $.getJSON('json/ng-movie-data.json', function(data) {
-            console.log("val");
         $.each(data, function(key, val) {
-            console.log(val.link);
             $('#ng_movies').append(
                 '<div class="item_stats">'
                 //Awards
@@ -26,11 +24,12 @@ $(document).ready(function() {
         });
     });
     $.getJSON('json/ng-games-data.json', function(data) {
-            console.log("val");
         $.each(data, function(key, val) {
-            console.log(val.link);
             $('#ng_games').append(
-                '<div class="item_stats">'
+                '<div id="ng_item">'
+                + '<a href=' + val.link + 'target="_blank">'
+                + '<img id="ng_image" src='
+                + val.img + '></a>'
                 //Awards
                 + val.award.replace(' ', '-').replace(' ', '-') + ' '
                 //Views
@@ -42,7 +41,7 @@ $(document).ready(function() {
                 + '<img id="ng_image" src='
                 + val.img + '></a>'
                 //Name
-                + '<div class="table_item_h1"><a href="' 
+                + '<div id="ng_item"><a href="' 
                 + val.link + '" target="_blank">' 
                 + val.name + '</a><div>'
                 //Description
