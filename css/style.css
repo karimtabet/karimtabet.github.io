@@ -22,13 +22,13 @@ body {
     height: 140px;
 }
 #nav h1 {
-    font-size: 28px;
+    font-size: 2em;
     text-align: center;
     margin-bottom: 0;
     margin-top: 5px;
 }
 #nav h2 {
-    font-size: 14px;
+    font-size: 0.9em;
     font-weight: normal;
     text-align: center;
     padding-left: 25px;
@@ -40,7 +40,7 @@ body {
     width: 100%;
 }
 #nav ul li {
-    font-size: 12px;
+    font-size: 0.75em;
     border-bottom: solid;
     border-color: #C1C1C1;
     border-width: 1px;
@@ -103,7 +103,7 @@ body {
 }
 .site_heading h2 {
     color: #FFFFFF;
-    font-size: 14px;
+    font-size: 0.9em;
     font-weight: bold;
     padding-top: 0;
     margin-top: 0;
@@ -126,7 +126,7 @@ body {
     margin-bottom: 0px;
 }
 .page_title h2 {
-    font-size: 16px;
+    font-size: 1em;
     margin-top: 3px;
     margin-bottom: 20px;
     color: #000;
@@ -137,15 +137,16 @@ body {
     background-color: #D66794;
 }
 #repo_item_h1 {
-    padding: 14px;
+    padding: 0.8em;
     border-top: solid;
     border-top-width: 1px;
     border-color: #C1C1C1;
     padding-bottom: 5px;
 }
 .item_stats {
-    word-spacing: 10px;
-    font-size: 11px;
+    letter-spacing: 0.1em;
+    word-spacing: 0.7em;
+    font-size: 0.7em;
     float: right;
     padding: 14px;
     padding-top: 30px;
@@ -153,7 +154,6 @@ body {
     font-weight: bold;
 }
 .item_stats a {
-    letter-spacing: 1px;
     text-decoration: none;
     color: #393939;
     font-weight: bold;
@@ -165,7 +165,7 @@ body {
     text-decoration: underline;
 }
 #repo_description {
-    font-size: 12px;
+    font-size: 0.7em;
     color: #393939;
     padding: 14px;
 }
