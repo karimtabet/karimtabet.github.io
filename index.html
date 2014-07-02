@@ -47,10 +47,10 @@
                 <div class="item_stats">
                     {{repo.language}}
                     <a title="Stargazers" href="{{repo.stargazers_url}}" target="_blank">
-                        <i class="fa fa-star">{{repo.stargazers_count}}</i>
+                        <i class="fa fa-star"></i>{{repo.stargazers_count}}
                     </a>
                     <a title="Forks" href="{{forks_url}}" target="_blank">
-                        <i class="fa fa-code-fork">{{repo.forks_count}}</i>
+                        <i class="fa fa-code-fork"></i>{{repo.forks_count}}
                     </a>
                 </div>
                 <div id="repo_item_h1">
@@ -63,7 +63,7 @@
         </div>
     </div>
 
-    <div id="newgrounds_page" class="page_container">
+    <!-- <div id="newgrounds_page" class="page_container" ng-controller='swfController'>
         <div class="site_logo">
             <img src="img/ng-tank.svg" height="50px">
         </div>
@@ -77,7 +77,7 @@
         <div id="ng_games" class="site_heading site_content_table">
             <h2>Games</h2>
         </div>
-    </div>
+    </div> -->
 
     <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
     <script>
@@ -98,6 +98,7 @@
     <script type="text/javascript" src="js/angular.min.js"></script>
     <script type="text/javascript" src="js/angular-app/app.js"></script>
     <script type="text/javascript" src="js/angular-app/controllers/githubController.js"></script>
+    <script type="text/javascript" src="js/angular-app/controllers/swfController.js"></script>
     <script src="js/jquery.generate-ng-data.js" type="text/javascript"></script>
 
     <!-- Google Analytics tracking code -->

@@ -141,7 +141,7 @@ body {
     border-top: solid;
     border-top-width: 1px;
     border-color: #C1C1C1;
-    padding-bottom: 5px;
+    padding-bottom: 0;
 }
 .item_stats {
     letter-spacing: 0.1em;
@@ -158,10 +158,10 @@ body {
     color: #393939;
     font-weight: bold;
 }
-.table_item_h1 a, .repo_forks a {
+#repo_item_h1 a, .repo_forks a {
     text-decoration: none;
 }
-.table_item_h1 a:hover, .table_item_h1 a:focus {
+#repo_item_h1 a:hover, #repo_item_h1 a:focus {
     text-decoration: underline;
 }
 #repo_description {
