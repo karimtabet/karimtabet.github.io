@@ -1,7 +1,6 @@
 body {
     font-family: 'Comfortaa', cursive;
     margin: 0;
-    margin-right: 330px;
 }
 #nav {
     position: fixed;
@@ -182,7 +181,6 @@ body {
     width: 100%;
     display: table;
     border-spacing: 45px;
-    overflow: scroll;
 }
 .swf_row {
     display: table-row;
