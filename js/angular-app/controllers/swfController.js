@@ -1,22 +1,23 @@
-app.controller("swfController", function($scope, $http) {
-    console.log(getAllFilesFromFolder('../../)'));
-});
+app.controller("swfController", function($scope, $http, $timeout) {
+    $timeout(function() {
+        $scope.swfList = [];
+        $http.get('json/swf-data.json').success(function(data) {
+            angular.forEach(data, function(value, index) {
+                $scope.swfItem = {};
+                $scope.swfItem.modal_id = value.modal_id;
+                $scope.swfItem.full_name = value.name;
+                $scope.swfItem.description = value.description;
+                $scope.swfItem.path = value.path;
+                $scope.swfItem.img = value.img;
+                $scope.swfItem.award = value.award;
+                $scope.swfItem.date = value.date;
+                $scope.swfItem.blurb = value.blurb;
+                $scope.swfItem.width = value.width;
+                $scope.swfItem.height = value.height;
+                $scope.swfList.push($scope.swfItem);
+            });
+        }).error(function(error) {
 
-var getAllFilesFromFolder = function(dir) {
-
-    var filesystem = require("fs");
-    var results = [];
-
-    filesystem.readdirSync(dir).forEach(function(file) {
-
-        file = dir+'/'+file;
-        var stat = filesystem.statSync(file);
-
-        if (stat && stat.isDirectory()) {
-            results = results.concat(_getAllFilesFromFolder(file))
-        } else results.push(file);
-
+        });
     });
-
-    return results;
-};
+});

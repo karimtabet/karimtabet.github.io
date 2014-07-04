@@ -1,0 +1,62 @@
+[
+    {
+        "modal_id": "vince_modal",
+        "name": "Vince the Viking", 
+        "img": "img/vince.png", 
+        "award": "", 
+        "date": "February 2012",
+        "path": "swf/Vince-The-Viking.swf", 
+        "blurb": "Pilot Vince through waves of familiar enemies!",
+        "description": "3rd Year BSc Computer Science project for the Multimedia module. The game was released incompleted, only taking the player through 2 complete stages.",
+        "width": "600px",
+        "height": "480px"
+    },
+    {
+        "modal_id": "give_eyes_modal",
+        "name": "Give Me Your Eyes!", 
+        "img": "img/give-eyes.png", 
+        "award": "", 
+        "date": "December 2009",
+        "path": "swf/Intro-2-Multimedia.swf",
+        "blurb": "Purple dude looses his eyes to an alien!",
+        "description": "1st Year BSc Computer Science projuect for the Intro to Multimedia module. Inspiration taken from Don Hertzfeldt's Rejected cartoons",
+        "width": "481px",
+        "height": "370px"
+    }, 
+    { 
+        "modal_id": "blood_soaked_modal",
+        "name": "Blood Soaked Insignificance", 
+        "img": "img/blood-soaked.png", 
+        "award": "",
+        "date": "November 2008", 
+        "path": "swf/Blooad-Soaked-Insignificance.swf", 
+        "blurb": "An insignificant blood-bath...",
+        "description": "2nd year Moving Image Arts A-Level project. Inspiration from Tarantino. An incomplete film.",
+        "width": "720px",
+        "height": "576px"
+    }, 
+    {
+        "modal_id": "tongues_flower_modal",
+        "name": "Mans Tongues Arms Flower", 
+        "img": "img/tongues-flower.png", 
+        "award": "", 
+        "date": "November 2008", 
+        "path": "swf/Mans-Tongues-Arms-Flower.swf", 
+        "blurb": "A man shows off his tongues' arms' flower!",
+        "description": "Hand drawn, frame by frame. Collated with Flash.",
+        "width": "550px",
+        "height": "400px"
+    },
+    {
+        "modal_id": "demon_modal",
+        "name": "The Evil Demon", 
+        "img": "img/evil-demon.png", 
+        "award": "Daily 3rd Place on Newgrounds", 
+        "date": "April 2007", 
+        "path": "swf/The-Evil-Demon.swf", 
+        "blurb": "An animation influenced by Ren\u00e9 Descartes' meditation: The Evil Demon/Genius",
+        "description": "1st year Moving Image Arts A-level project. Influenced by Ren\u00e9 Descartes' meditation: The Evil Demon/Genius. Music by Pink Floyd",
+        "width": "800px",
+        "height": "600px"
+    }
+]

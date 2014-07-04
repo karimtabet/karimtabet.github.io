@@ -20,7 +20,7 @@
             <li class="nav_button" id="button_4">Github</li>
             <li class="nav_button" id="button_5">Bitbucket</li>
             <li class="nav_button" id="button_6">LinkedIn</li>
-            <li class="nav_button" id="button_7">Newgrounds</li>
+            <li class="nav_button" id="button_7">Flash</li>
             <li class="nav_button" id="button_8">Twitter</li>
         <ul>
     </div>
@@ -63,25 +63,41 @@
         </div>
     </div>
 
-    <!-- <div id="newgrounds_page" class="page_container" ng-controller='swfController'>
-        <div class="site_logo">
-            <img src="img/ng-tank.svg" height="50px">
-        </div>
+    <div id="flash_page" class="page_container" ng-controller='swfController'>
         <div class="page_title">
-            <h1>Newgrounds Page</h1>
-            <a href="http://karimtabet.newgrounds.com" target="_blank"><h2>http://karimtabet.newgrounds.com</h2></a>
+            <h1>Flash Page</h1>
         </div>
-        <div id="ng_movies" class="site_heading site_content_table">
-            <h2>Movies</h2>
+        <div id="swf_container">
+            <div class="swf_row">
+                <div class="swf_item" ng-repeat="swf in swfList.slice(0,3)">
+                    <a href="{{swf.newgrounds_url}}">
+                        <img src="{{swf.img}}"/>
+                        <h2>{{swf.full_name}}</h2>
+                        <h3>{{swf.blurb}}</h3>
+                    </a>
+                    <div id="{{swf.modal_id}}" class="modal_content">
+                        <embed src="{{swf.path}}" width="{{swf.width}}" height="{{swf.height}}"> 
+                    </div>
+                </div>
+            </div>
+            <div class="swf_row">
+                <div class="swf_item" ng-repeat="swf in swfList.slice(3,5)">
+                    <a href="{{swf.newgrounds_url}}">
+                        <img src="{{swf.img}}"/>
+                        <h2>{{swf.full_name}}</h2>
+                        <h3>{{swf.blurb}}</h3>
+                    </a>
+                    <div id="{{swf.modal_id}}" class="modal_content">
+                        <embed src="{{swf.path}}" width="{{swf.width}}" height="{{swf.height}}"> 
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="ng_games" class="site_heading site_content_table">
-            <h2>Games</h2>
-        </div>
-    </div> -->
+    </div>
 
     <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
     <script>
-        $('.nav_button').click(function(event) {
+        $('.nav_button').click(function() {
             $('.page_container').fadeOut("fast");
             var page_to_open = 
                 "#" 
@@ -96,10 +112,32 @@
         });
     </script>
     <script type="text/javascript" src="js/angular.min.js"></script>
+    <script src="js/jquery.simplemodal.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="js/angular-app/app.js"></script>
     <script type="text/javascript" src="js/angular-app/controllers/githubController.js"></script>
     <script type="text/javascript" src="js/angular-app/controllers/swfController.js"></script>
     <script src="js/jquery.generate-ng-data.js" type="text/javascript"></script>
+    <script>
+        $(document).on("click", ".swf_item", function() {
+            var modal_id = '#' + $(this).find(".modal_content").attr('id');
+            $(modal_id).modal({
+                onOpen: function (dialog) {
+                    dialog.overlay.fadeIn('medium');
+                    dialog.data.slideDown('fast');
+                    dialog.container.slideDown('fast');
+                },
+                onClose: function(dialog) {
+                    dialog.data.slideDown('fast');
+                    dialog.container.slideDown('fast');
+                    dialog.overlay.fadeOut('medium', function () {
+                        $.modal.close(); // must call this!
+                    });
+                },
+                autoResize:true,
+                overlayClose:true
+            });
+        });
+    </script>
 
     <!-- Google Analytics tracking code -->
     <script>
