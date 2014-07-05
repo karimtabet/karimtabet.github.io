@@ -228,6 +228,17 @@ body {
     color: #000;
     text-decoration: none;
 }
+.swf_item h2 {
+    margin-top: 5px;
+    margin-bottom: 1px;
+    vertical-align: baseline;
+    font-size: 18px;
+}
+.swf_item .swf_date {
+    font-size: 12px;
+    margin-top: 1px;
+    margin-bottom: 5px;
+}
 .modal_content {
     position: fixed;
     display: none;
