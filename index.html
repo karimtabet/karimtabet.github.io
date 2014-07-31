@@ -17,7 +17,7 @@
             <li class="nav_button selected" id="button_1"><div>Blog</li>
             <li class="nav_button" id="button_2">News</li>
             <li class="nav_button" id="button_3">Portfolio</li>
-            <li class="nav_button" id="button_4">Github</li>
+            <li class="nav_button" id="button_4">Code</li>
             <li class="nav_button" id="button_5">Bitbucket</li>
             <li class="nav_button" id="button_6">LinkedIn</li>
             <li class="nav_button" id="button_7">Flash</li>
@@ -33,16 +33,19 @@
         <h1>RANDOM STUFF AND THINGS! YAHAR!</h1>
     </div>
 
-    <div id="github_page" class="page_container" ng-controller='githubController'>
-        <div class="site_logo">
-            <img src="img/github-circled.svg" height="50px">
+    <div id="code_page" class="page_container" ng-controller='githubController'>
+        <div class="page_icon">
+            <img src="img/code-icon.svg" height="50px">
         </div>
         <div class="page_title">
-            <h1>Github Page</h1>
-            <a href="http://github.com/karimtabet" target="_blank"><h2>http://github.com/karimtabet</h2></a>
+            <h1>Public Code Repositories</h1>
+           <!--  <a href="http://github.com/karimtabet" target="_blank"><h2>http://github.com/karimtabet</h2></a> -->
         </div>
         <div id="github_repos" class="site_heading site_content_table">
-            <h2>Repositories</h2>
+            <div class="page_icon">
+            <img src="img/github-circled.svg" height="30px">
+        </div>
+            <h2>Github Repositories</h2>
             <div ng-repeat="repo in githubRepoList">
                 <div class="item_stats">
                     {{repo.language}}
@@ -64,8 +67,11 @@
     </div>
 
     <div id="flash_page" class="page_container" ng-controller='swfController'>
+        <div class="page_icon">
+            <img src="img/swf-icon.svg" height="50px">
+        </div>
         <div class="page_title">
-            <h1>Flash Page</h1>
+            <h1>Flash Showcase</h1>
         </div>
         <div id="swf_container">
             <div class="swf_row">

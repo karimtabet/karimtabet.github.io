@@ -96,8 +96,8 @@ body {
 .current {
     display: block;
 }
-.site_logo {
-    padding-top: 30px;
+.page_icon {
+    padding-top: 20px;
     margin-right: 15px;
     float: left;
     overflow: auto;
@@ -125,6 +125,7 @@ body {
 .page_title h1 {
     left: 50px;
     margin-bottom: 0px;
+    padding-top: 5px;
 }
 .page_title h2 {
     font-size: 1em;
@@ -134,8 +135,16 @@ body {
     text-decoration: underline;
     display: inline-block;
 }
+#github_repos {
+    margin-top: 50px;
+}
 #github_repos h2 {
     background-color: #D66794;
+}
+#github_repos .page_icon {
+    padding-top: 8px;
+    padding-left: 12px;
+    margin-right: 10px;
 }
 #repo_item_h1 {
     padding: 0.8em;
@@ -173,8 +182,8 @@ body {
 #flash_page {
     padding-left: 250px;
 }
-#flash_page .page_title{
-    padding-left: 40px;
+#flash_page .page_icon {
+    padding-left: 45px;
 }
 #swf_container {
     display: table;

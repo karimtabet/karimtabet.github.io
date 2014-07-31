@@ -1,7 +1,7 @@
 app.controller("githubController", function($scope, $http, $timeout) {
     $timeout(function() {
         $scope.githubRepoList = [];
-        $http.get('json/github-data.json').success(function(data) {
+        $http.get('https://api.github.com/users/karimtabet/repos').success(function(data) {
             angular.forEach(data, function(value, index) {
                 $scope.githubRepo = {};
                 var forks_url = 'https://github.com/'
