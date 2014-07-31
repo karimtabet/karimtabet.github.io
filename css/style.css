@@ -183,22 +183,20 @@ body {
     padding-left: 250px;
 }
 #flash_page .page_icon {
-    padding-left: 45px;
+    padding-left: 40px;
 }
 #swf_container {
-    display: table;
-    border-spacing: 45px;
-    table-layout: fixed;
-}
-.swf_row {
-    display: table-row;
+    margin-top: 50px;
+    margin-left: 40px;
 }
 .swf_item {
     text-align: center;
     position: relative;
-    display: table-cell;
+    display: inline-block;
     min-width: 368px;
     max-width: 368px;
+    margin-right: 20px;
+    margin-bottom: 20px;
     border-top: none;
     border-bottom: solid;
     -webkit-border-radius: 10px;

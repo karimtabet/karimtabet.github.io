@@ -45,28 +45,24 @@
             <h1>Flash Showcase</h1>
         </div>
         <div id="swf_container">
-            <div class="swf_row">
-                <div class="swf_item" ng-repeat="swf in swfList.slice(0,3)">
-                    <a href="{{swf.newgrounds_url}}">
-                        <img src="{{swf.img}}"/>
-                        <h2>{{swf.full_name}}</h2>
-                        <h2 class="swf_date">{{swf.date}}</h2>
-                    </a>
-                    <div id="{{swf.modal_id}}" class="modal_content">
-                        <embed src="{{swf.path}}" width="{{swf.width}}" height="{{swf.height}}"> 
-                    </div>
+            <div class="swf_item" ng-repeat="swf in swfList.slice(0,3)">
+                <a href="{{swf.newgrounds_url}}">
+                    <img src="{{swf.img}}"/>
+                    <h2>{{swf.full_name}}</h2>
+                    <h2 class="swf_date">{{swf.date}}</h2>
+                </a>
+                <div id="{{swf.modal_id}}" class="modal_content">
+                    <embed src="{{swf.path}}" width="{{swf.width}}" height="{{swf.height}}"> 
                 </div>
             </div>
-            <div class="swf_row">
-                <div class="swf_item" ng-repeat="swf in swfList.slice(3,5)">
-                    <a href="{{swf.newgrounds_url}}">
-                        <img src="{{swf.img}}"/>
-                        <h2>{{swf.full_name}}</h2>
-                        <h2 class="swf_date">{{swf.date}}</h2>
-                    </a>
-                    <div id="{{swf.modal_id}}" class="modal_content">
-                        <embed src="{{swf.path}}" width="{{swf.width}}" height="{{swf.height}}"> 
-                    </div>
+            <div class="swf_item" ng-repeat="swf in swfList.slice(3,5)">
+                <a href="{{swf.newgrounds_url}}">
+                    <img src="{{swf.img}}"/>
+                    <h2>{{swf.full_name}}</h2>
+                    <h2 class="swf_date">{{swf.date}}</h2>
+                </a>
+                <div id="{{swf.modal_id}}" class="modal_content">
+                    <embed src="{{swf.path}}" width="{{swf.width}}" height="{{swf.height}}"> 
                 </div>
             </div>
         </div>
