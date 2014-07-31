@@ -26,44 +26,11 @@
     </div>
 
     <div id="blog_page" class="page_container current">
-        <h1>THIS SITE IS UNDER DEVELOPMENT</h1>
+        <h1>BLOG COMING SOON!</h1>
     </div>
 
-    <div id="news_page" class="page_container" >
-        <h1>RANDOM STUFF AND THINGS! YAHAR!</h1>
-    </div>
-
-    <div id="code_page" class="page_container" ng-controller='githubController'>
-        <div class="page_icon">
-            <img src="img/code-icon.svg" height="50px">
-        </div>
-        <div class="page_title">
-            <h1>Public Code Repositories</h1>
-           <!--  <a href="http://github.com/karimtabet" target="_blank"><h2>http://github.com/karimtabet</h2></a> -->
-        </div>
-        <div id="github_repos" class="site_heading site_content_table">
-            <div class="page_icon">
-            <img src="img/github-circled.svg" height="30px">
-        </div>
-            <h2>Github Repositories</h2>
-            <div ng-repeat="repo in githubRepoList">
-                <div class="item_stats">
-                    {{repo.language}}
-                    <a title="Stargazers" href="{{repo.stargazers_url}}" target="_blank">
-                        <i class="fa fa-star"></i>{{repo.stargazers_count}}
-                    </a>
-                    <a title="Forks" href="{{forks_url}}" target="_blank">
-                        <i class="fa fa-code-fork"></i>{{repo.forks_count}}
-                    </a>
-                </div>
-                <div id="repo_item_h1">
-                    <a href="{{repo.html_url}}" target="_blank">{{repo.full_name}}</a>
-                </div>
-                <div id="repo_description">
-                    {{repo.description}}
-                </div>
-            </div>
-        </div>
+    <div id="web_page" class="page_container" >
+        <h1>WEB SHOWCASE COMING SOON!</h1>
     </div>
 
     <div id="flash_page" class="page_container" ng-controller='swfController'>
@@ -96,6 +63,39 @@
                     <div id="{{swf.modal_id}}" class="modal_content">
                         <embed src="{{swf.path}}" width="{{swf.width}}" height="{{swf.height}}"> 
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="code_page" class="page_container" ng-controller='githubController'>
+        <div class="page_icon">
+            <img src="img/code-icon.svg" height="50px">
+        </div>
+        <div class="page_title">
+            <h1>Public Code Repositories</h1>
+           <!--  <a href="http://github.com/karimtabet" target="_blank"><h2>http://github.com/karimtabet</h2></a> -->
+        </div>
+        <div id="github_repos" class="site_heading site_content_table">
+            <div class="page_icon">
+            <img src="img/github-circled.svg" height="30px">
+        </div>
+            <h2>Github Repositories</h2>
+            <div ng-repeat="repo in githubRepoList">
+                <div class="item_stats">
+                    {{repo.language}}
+                    <a title="Stargazers" href="{{repo.stargazers_url}}" target="_blank">
+                        <i class="fa fa-star"></i>{{repo.stargazers_count}}
+                    </a>
+                    <a title="Forks" href="{{forks_url}}" target="_blank">
+                        <i class="fa fa-code-fork"></i>{{repo.forks_count}}
+                    </a>
+                </div>
+                <div id="repo_item_h1">
+                    <a href="{{repo.html_url}}" target="_blank">{{repo.full_name}}</a>
+                </div>
+                <div id="repo_description">
+                    {{repo.description}}
                 </div>
             </div>
         </div>
