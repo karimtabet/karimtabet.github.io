@@ -27,7 +27,7 @@
     </div>
 
     <!-- Blog Page -->
-    <div id="blog_page" class="page_container current">
+    <div id="blog_page" class="page_container current" ng-controller='bloggerController'>
         <h1>BLOG COMING SOON!</h1>
     </div>
 
@@ -130,6 +130,7 @@
     <script type="text/javascript" src="js/angular-app/app.js"></script>
     <script type="text/javascript" src="js/angular-app/controllers/githubController.js"></script>
     <script type="text/javascript" src="js/angular-app/controllers/swfController.js"></script>
+    <script type="text/javascript" src="js/angular-app/controllers/bloggerController.js"></script>
     <script>
         $(document).on("click", ".swf_item", function() {
             var modal_id = '#' + $(this).find(".modal_content").attr('id');
